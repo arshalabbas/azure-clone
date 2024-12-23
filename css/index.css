@@ -1,0 +1,57 @@
+:root {
+  --bg-natural-fade: #f7f7f7;
+  --fg-base-subtle: #17253d;
+}
+
+@font-face {
+  font-family: "Fluent Icons";
+  src: url(../assets/fonts/Icons.woff2) format("woff2");
+}
+@font-face {
+  font-family: SegoeUI;
+  src: "Segoe UI", url(../assets/fonts/Segoe-400.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: "Segoe UI", url(../assets/fonts/Segoe-100.woff2) format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: "Segoe UI", url(../assets/fonts/Segoe-200.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: "Segoe UI", url(../assets/fonts/Segoe-600.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: "Segoe UI", url(../assets/fonts/Segoe-700.woff2) format("woff2");
+  font-weight: 700;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 12px;
+  scroll-behavior: smooth;
+  line-height: 1.15;
+}
+
+body {
+  font-family: "SegoeUI", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  background: #f7f7f7;
+  color: #17253d;
+}/*# sourceMappingURL=index.css.map */
