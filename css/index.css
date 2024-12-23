@@ -56,6 +56,12 @@ body {
   color: #17253d;
 }
 
+.container {
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* Heade - START */
 header {
   background: #ffffff;
@@ -119,18 +125,20 @@ button {
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
   height: 34px;
-  margin-top: 4px;
 }
 .category-selector .inner-container {
+  margin: 0 1px;
   color: #000;
   height: 100%;
-  margin: 0 1px;
   padding: 0 15px;
   cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .category-selector .inner-container button {
   font-weight: 600;
   font-size: 15px;
+  margin-top: 6.5px;
 }
 .category-selector .inner-container i {
   font-size: 12px;
@@ -141,4 +149,81 @@ button {
   top: 2px;
 }
 
-/* Header - END *//*# sourceMappingURL=index.css.map */
+/* Header - END */
+/* Hero - START */
+.hero-banner {
+  width: 100%;
+  height: 180px;
+  max-height: 580px;
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-container .inner-container {
+  margin-top: 2rem;
+}
+
+.hero-subtle {
+  margin-bottom: 0.75rem;
+  color: #17253d;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.06rem;
+}
+
+.hero-title {
+  color: #0e1726;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: -0.05em;
+}
+
+.hero-description {
+  color: #17253d;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: -0.03em;
+  padding-right: 1rem;
+}
+
+.hero-actions-container {
+  margin-top: 1.5rem;
+}
+.hero-actions-container .inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn {
+  border: 2px solid transparent;
+  padding: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.02em;
+  background-color: #0078d4;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn span {
+  padding-bottom: 0.125rem;
+  display: block;
+  text-align: center;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #004275;
+  border-color: #17253d;
+}
+
+/* Hero - END *//*# sourceMappingURL=index.css.map */
