@@ -54,4 +54,87 @@ body {
   letter-spacing: -0.03em;
   background: #f7f7f7;
   color: #17253d;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/* Heade - START */
+header {
+  background: #ffffff;
+}
+
+.header-top {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.nav-menu-btn {
+  margin: 1px;
+  width: 48px;
+  height: 48px;
+}
+.nav-menu-btn i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 15px;
+  margin-top: 5px;
+}
+
+.nav-search-btn {
+  padding: 8px 8px 8px 0px;
+  margin-left: 2px;
+  height: 32px;
+  margin-right: 6px;
+  line-height: 18px;
+}
+.nav-search-btn i {
+  font-size: 16px;
+  margin-left: 7px;
+  line-height: 18px;
+  margin-top: -0.5px;
+}
+
+.ms-logo {
+  padding: 12px 4px;
+  margin-left: 12px;
+  margin-top: 2px;
+}
+.ms-logo img {
+  margin-top: -3px;
+  width: 108px;
+  max-width: none;
+  height: auto;
+}
+
+.category-selector {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  height: 34px;
+}
+.category-selector .inner-container {
+  color: #000;
+  height: 100%;
+  margin: 0 1px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.category-selector .inner-container button {
+  font-weight: 600;
+}
+.category-selector i {
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 7px;
+  line-height: 18px;
+  margin-top: -0.5px;
+}
+
+/* Header - END *//*# sourceMappingURL=index.css.map */
