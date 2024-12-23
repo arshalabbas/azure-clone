@@ -83,6 +83,7 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  font-family: "SegoeUI", sans-serif;
 }
 
 .nav-menu-btn {
@@ -132,6 +133,7 @@ button {
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
   height: 34px;
+  margin-top: 4px;
 
   .inner-container {
     color: #000;
@@ -142,15 +144,16 @@ button {
 
     button {
       font-weight: 600;
+      font-size: 15px;
     }
-  }
-
-  i {
-    font-size: 12px;
-    font-weight: 700;
-    padding-left: 7px;
-    line-height: 18px;
-    margin-top: -0.5px;
+    i {
+      font-size: 12px;
+      font-weight: 700;
+      padding-left: 7px;
+      margin-top: -0.5px;
+      position: relative;
+      top: 2px;
+    }
   }
 }
 /* Header - END */
