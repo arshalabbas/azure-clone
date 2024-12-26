@@ -62,6 +62,23 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.05em;
+}
+
+.subtle {
+  margin-bottom: 0.75rem;
+  color: #17253d;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.06rem;
+}
+
 .spacer {
   width: 100%;
   height: 2rem;
@@ -272,4 +289,111 @@ main {
   line-height: 1;
 }
 
-/* Sticky Header - END *//*# sourceMappingURL=index.css.map */
+/* Sticky Header - END */
+/* Featured Section - START */
+.featured-section {
+  background: #f4fafd;
+  padding: 3.5rem 0;
+  position: relative;
+}
+
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  overflow: hidden;
+}
+.bg-img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.featured-content {
+  position: relative;
+  z-index: 50;
+}
+
+.feature-cards {
+  padding: 0 0.25rem;
+}
+
+.feature-card {
+  box-shadow: 0 0 0.125rem var(--root-depth-color-1, rgba(0, 0, 0, 0.12)), 0 0.125rem 0.25rem var(--root-depth-color-2, rgba(0, 0, 0, 0.14));
+  background: #fefefe;
+  border-radius: 1rem;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 1px;
+  word-wrap: break-word;
+}
+.feature-card .figure {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  width: 100%;
+  height: auto;
+}
+.feature-card .figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  aspect-ratio: 2.33333;
+}
+.feature-card .content-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+}
+.feature-card .content-container .content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.feature-card .content-container .content h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  margin-top: 0.25rem;
+}
+.feature-card .content-container .content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  color: #17253d;
+}
+.feature-card .content-container .footer {
+  margin-top: 2rem;
+}
+.feature-card .content-container .footer a {
+  color: #004275;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.feature-card .content-container .footer a .action-btn {
+  flex-grow: 1;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Featured Section - END *//*# sourceMappingURL=index.css.map */
