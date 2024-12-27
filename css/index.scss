@@ -557,4 +557,45 @@ main {
     color: #fff;
   }
 }
+
+.tab-content-container {
+  margin-top: 1.5rem;
+}
+
+.accordian-group {
+  list-style-type: none;
+  margin-top: 1.5rem;
+
+  li {
+    border-bottom: 0.0625rem solid #bdc5d2;
+  }
+}
+
+.accordian-item {
+  button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      letter-spacing: -0.03em;
+      text-align: left;
+    }
+
+    i {
+      font-size: 1rem;
+      line-height: 1.5625rem;
+    }
+  }
+
+  &:first-child button {
+    padding-top: 0;
+  }
+}
 /* Solutions - END */
