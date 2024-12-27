@@ -62,6 +62,10 @@ body {
   margin: 0 auto;
 }
 
+.fluent-icon {
+  font-family: "Fluent Icons" !important;
+}
+
 .title {
   font-weight: 600;
   font-size: 1.5rem;
@@ -82,6 +86,17 @@ body {
 .spacer {
   width: 100%;
   height: 2rem;
+}
+
+.link {
+  color: #004275;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Heade - START */
@@ -258,6 +273,7 @@ main {
 /* Sticky Header - START */
 .sticky-header {
   position: sticky;
+  top: 0;
   z-index: 500;
 }
 .sticky-header .inner-container {
@@ -321,6 +337,11 @@ main {
 
 .feature-cards {
   padding: 0 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  row-gap: 0.5rem;
 }
 
 .feature-card {
@@ -338,6 +359,7 @@ main {
   padding: 0.5rem 0.5rem 0 0.5rem;
   width: 100%;
   height: auto;
+  display: flex;
 }
 .feature-card .figure img {
   width: 100%;
@@ -394,6 +416,14 @@ main {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  height: 35px;
+}
+.feature-card .content-container .footer a .link {
+  padding-bottom: 0.125rem;
+  color: #004275;
+}
+.feature-card:first-child .content-container .footer a .action-btn {
+  height: 36px;
 }
 
 /* Featured Section - END *//*# sourceMappingURL=index.css.map */
