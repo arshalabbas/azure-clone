@@ -267,14 +267,7 @@
             </button>
           </li>
         </ul>
-        <div>
-          <a href="#" class="icon-link">
-            <span class="btn action-btn">
-              <i class="ms-Icon ms-Icon--ChevronRight fluent-icon"></i>
-            </span>
-            <span class="link">View all solutions (40+)</span>
-          </a>
-        </div>
+        <div id="end-link" data-label="View all solutions (40+)"></div>
       </div>
     </section>
     <!-- Solutions Section - END -->
@@ -287,11 +280,12 @@
 
       <div class="container">
         <div class="subtle">PRODUCTS AND SERVICES</div>
-        <div class="title">Explore Azure products and services</div>
+        <div class="title">Explore tools for bringing your vision to life</div>
 
-        <div class="spacer-sm"></div>
+        <div class="spacer"></div>
 
         <div class="col">
+          <!-- Tabs -->
           <div class="tab-container">
             <div class="tab-group" style="width: 732px">
               <button class="pill-btn active">Featured</button>
@@ -309,6 +303,32 @@
             </div>
           </div>
         </div>
+
+        <div class="spacer"></div>
+
+        <div class="col" id="badge-cards">
+          <!-- Main card -->
+          <div class="card-padding image-card">
+            <div class="card-bg">
+              <img src="./assets/images/card1.avif" alt="Card Image" />
+            </div>
+            <div class="card-fg">
+              <div class="safe-area"></div>
+              <!-- Copies -->
+              <div class="card-content">
+                <h3 class="title-lg">Azure OpenAI Service</h3>
+                <p>Build your own agents and generative AI apps.</p>
+                <button class="btn btn-primary btn-md">
+                  <span> Explore the product </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mini cards from index.js on line 7 -->
+        </div>
+        <div class="spacer"></div>
+
+        <div id="end-link" data-label="See all products (200+)"></div>
       </div>
     </section>
     <!-- Products and Services - END -->
@@ -319,4 +339,6 @@
       console.log(window.scrollY);
     });
   </script>
+  <script src="./js/constants.js"></script>
+  <script src="./js/index.js"></script>
 </html>
