@@ -920,4 +920,42 @@ main {
   aspect-ratio: 1.77778;
 }
 
-/* Resources - END *//*# sourceMappingURL=index.css.map */
+/* Resources - END */
+/* Infrastructure - START */
+.infra-section {
+  color: #dceefe;
+  padding: 3.5rem 0;
+  background-image: url("../assets/images/earth.avif");
+  background-position: center;
+  background-size: cover;
+}
+.infra-section .inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+.infra-section .inner-container h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.05em;
+}
+.infra-section .inner-container p {
+  margin: 1rem 0 0;
+  padding: 0 1rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.03em;
+}
+.infra-section .inner-container .btn {
+  background-color: #b3daf0;
+  width: 100%;
+  color: #0e1726;
+  margin-top: 1.5rem;
+}
+
+/* Infrastructure - END *//*# sourceMappingURL=index.css.map */
