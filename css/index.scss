@@ -1066,7 +1066,6 @@ main {
       background-color: #b3daf0;
       width: 100%;
       color: #0e1726;
-      margin-top: 1.5rem;
     }
   }
 }
@@ -1124,6 +1123,7 @@ main {
       flex: 0 0 100%;
       width: 100%;
       max-width: 100%;
+      height: 219.68px;
       padding: 0 0.25rem;
       padding-inline: 0.5rem;
       padding-block: 0.5rem 0;
@@ -1132,10 +1132,9 @@ main {
 
       img {
         width: 100%;
-        height: 100%;
+        height: 219.68px;
         object-fit: cover;
         border-radius: 0.5rem;
-        aspect-ratio: auto;
       }
     }
 
@@ -1160,7 +1159,7 @@ main {
           border-radius: 0.5rem;
           overflow: hidden;
           width: 175px;
-          height: 100%;
+          height: 74px;
 
           img {
             width: 100%;
