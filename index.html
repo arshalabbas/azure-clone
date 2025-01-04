@@ -46,11 +46,14 @@
         <div class="hero-text-container">
           <div class="inner-container">
             <div class="hero-subtle">AZURE. LIMITLESS INNOVATION.</div>
-            <div class="hero-title">Turn AI curious into AI capable</div>
+            <div class="hero-title">
+              Your AI journey starts with a single step
+            </div>
             <div class="hero-description">
-              Expand your AI skills with the latest technologies featured at
-              Microsoft Ignite. Pay as you go or try Azure free for up to 30
-              days. There’s no upfront commitment—cancel anytime.
+              Make your platform AI-ready with a streamlined migration to
+              Azure—and get the level of security, productivity, and AI
+              capability that your org needs. Pay as you go or try Azure free
+              for up to 30 days. There’s no upfront commitment—cancel anytime.
             </div>
           </div>
         </div>
@@ -113,10 +116,14 @@
               </div>
               <div class="content-container">
                 <div class="content">
-                  <h3>Microsoft Ignite</h3>
+                  <h3>
+                    Protect, adapt, and innovate with Windows Server 2025 on
+                    Azure
+                  </h3>
                   <p>
-                    Explore the latest Azure innovations, learn from experts,
-                    grow your skillset, and expand your network.
+                    Get stronger security, increased hybrid capabilities, and
+                    new levels of performance, as well as confidential computing
+                    and hotpatching.
                   </p>
                 </div>
 
@@ -125,7 +132,7 @@
                     <span class="btn action-btn">
                       <i class="ms-Icon ms-Icon--ChevronRight fluent-icon"></i>
                     </span>
-                    <span class="link">Learn more</span>
+                    <span class="link">Read the blog</span>
                   </a>
                 </div>
               </div>
@@ -141,11 +148,11 @@
               </div>
               <div class="content-container">
                 <div class="content">
-                  <h3>Get from idea to code to production faster</h3>
+                  <h3>Create AI agents that keep humans at the center</h3>
                   <p>
-                    Speed production across the app lifecycle—and see faster
-                    business results using the open and integrated Azure AI app
-                    platform.
+                    Empower your entire organization to create, customize, host,
+                    run, and manage AI solutions and services—including AI
+                    agents—with Azure AI Foundry.
                   </p>
                 </div>
 
@@ -154,7 +161,7 @@
                     <span class="btn action-btn">
                       <i class="ms-Icon ms-Icon--ChevronRight fluent-icon"></i>
                     </span>
-                    <span class="link">Read the AI Blog</span>
+                    <span class="link">Learn more</span>
                   </a>
                 </div>
               </div>
@@ -170,11 +177,11 @@
               </div>
               <div class="content-container">
                 <div class="content">
-                  <h3>Realize your AI ambitions</h3>
+                  <h3>See new AI use cases in the Cloud Cultures series</h3>
                   <p>
-                    Learn about the latest innovations in infrastructure—with
-                    advanced AI technologies on a secure, powerful, and adaptive
-                    cloud platform.
+                    Explore stories of AI innovation with cloud technology that
+                    goes beyond coding—to help create connections between
+                    people, ecosystems, and economies.
                   </p>
                 </div>
 
@@ -243,26 +250,26 @@
           </li>
           <li class="accordian-item">
             <button class="accordian-toggle">
-              <h3>Azure AI infrastructure</h3>
+              <h3>An adaptive cloud</h3>
               <i class="ms-Icon ms-Icon--ChevronDown fluent-icon"></i>
             </button>
           </li>
           <li class="accordian-item">
             <button class="accordian-toggle">
-              <h3>An adaptive cloud</h3>
+              <h3>Migrate to innovate</h3>
               <i class="ms-Icon ms-Icon--ChevronDown fluent-icon"></i>
             </button>
           </li>
 
           <li class="accordian-item">
             <button class="accordian-toggle">
-              <h3>Data analytics for AI</h3>
+              <h3>Build and modernize intelligent apps</h3>
               <i class="ms-Icon ms-Icon--ChevronDown fluent-icon"></i>
             </button>
           </li>
           <li class="accordian-item">
             <button class="accordian-toggle">
-              <h3>Build and modernize intelligent apps</h3>
+              <h3>Azure Innovate & Azure Migrate and Modernize</h3>
               <i class="ms-Icon ms-Icon--ChevronDown fluent-icon"></i>
             </button>
           </li>
@@ -274,9 +281,9 @@
 
     <!-- Products and Services - START -->
     <section class="products-section">
-      <div class="bg-img-container">
+      <!-- <div class="bg-img-container">
         <img src="./assets/images/bg-v2.avif" alt="Image BG" />
-      </div>
+      </div> -->
 
       <div class="container">
         <div class="subtle">PRODUCTS AND SERVICES</div>
@@ -316,8 +323,11 @@
               <div class="safe-area"></div>
               <!-- Copies -->
               <div class="card-content">
-                <h3 class="title-lg">Azure OpenAI Service</h3>
-                <p>Build your own agents and generative AI apps.</p>
+                <h3 class="title-lg">Windows Server on Azure</h3>
+                <p>
+                  Run business-critical workloads with hybrid cloud agility and
+                  advanced security.
+                </p>
                 <button class="btn btn-primary btn-md">
                   <span> Explore the product </span>
                 </button>
@@ -427,7 +437,7 @@
           </div>
         </div>
 
-        <div class="tab-arrows-v2">
+        <div class="tab-arrows-v2 space-on-top">
           <button class="prev"><i class="glyph"></i></button>
           <button class="next"><i class="glyph"></i></button>
         </div>
@@ -487,6 +497,13 @@
               <!-- Cards will be rendered from index.js - line: 112 -->
             </div>
           </div>
+          <!-- Arrow Icons -->
+          <div class="tab-arrows-v2 xl">
+            <button class="prev"><i class="glyph"></i></button>
+            <button class="next"><i class="glyph"></i></button>
+          </div>
+
+          <div id="end-link" data-label="View all stories"></div>
         </div>
       </div>
     </section>
@@ -494,7 +511,14 @@
   </body>
   <script>
     // REVIEW: For testing purposes
+    let count = 0;
+
     window.addEventListener("scroll", (e) => {
+      count++;
+      if (count > 10) {
+        console.clear();
+        count = 0;
+      }
       console.log(window.scrollY);
     });
   </script>
