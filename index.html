@@ -494,7 +494,7 @@
         <div class="col">
           <div class="carousel-window">
             <div class="carousels" id="story-carousels">
-              <!-- Cards will be rendered from index.js - line: 112 -->
+              <!-- Cards will be rendered from index.js - line: 99 -->
             </div>
           </div>
           <!-- Arrow Icons -->
@@ -508,20 +508,25 @@
       </div>
     </section>
     <!-- Stories - END -->
-  </body>
-  <script>
-    // REVIEW: For testing purposes
-    let count = 0;
 
-    window.addEventListener("scroll", (e) => {
-      count++;
-      if (count > 10) {
-        console.clear();
-        count = 0;
-      }
-      console.log(window.scrollY);
-    });
-  </script>
+    <!-- Steps - START -->
+    <section class="steps-section">
+      <div class="bg-img-container">
+        <img src="./assets/images/steps-bg.avif" alt="Steps BG Image" />
+      </div>
+
+      <div class="container">
+        <h2 class="title-xl">Take the next step</h2>
+
+        <div class="col">
+          <div class="steps-cards col" id="steps-cards">
+            <!-- Cards will be rendered from index.js - line: 110  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Steps - END -->
+  </body>
   <script src="./js/constants.js"></script>
   <script src="./js/index.js"></script>
 </html>

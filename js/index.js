@@ -27,19 +27,6 @@ BADGE_CARDS.forEach((item) => {
   badgeCardsContainer.appendChild(badgeCard);
 });
 
-// End Link
-const endLink = document.querySelectorAll("#end-link");
-endLink.forEach((item) => {
-  item.innerHTML = `
-  <a href="#" class="icon-link">
-      <span class="btn action-btn">
-          <i class="ms-Icon ms-Icon--ChevronRight fluent-icon"></i>
-      </span>
-      <span class="link">${item.dataset.label}</span>
-  </a>
-  `;
-});
-
 // Stories Carousel
 
 /**
@@ -116,4 +103,53 @@ STORIES.forEach((story) => {
     story.quote,
     story.products
   );
+});
+
+// Steps cards
+const stepsCards = document.querySelector("#steps-cards");
+STEPS_CARDS.forEach((item) => {
+  const stepCard = document.createElement("div");
+  stepCard.classList.add("card-padding", "badge-card");
+
+  stepCard.innerHTML = `
+  <div class="card-body no-gap">
+    <div class="content">
+      <h3 class="title-sm">
+        ${item.title}
+      </h3>
+      <p>${item.description}</p>
+    </div>
+
+    <div class="action-footer">
+      <div id="end-link" data-label="${item.footerLabel}"></div>
+    </div>
+  </div>
+  `;
+
+  stepsCards.appendChild(stepCard);
+});
+
+// End Link
+const endLink = document.querySelectorAll("#end-link");
+endLink.forEach((item) => {
+  item.innerHTML = `
+  <a href="#" class="icon-link">
+      <span class="btn action-btn">
+          <i class="ms-Icon ms-Icon--ChevronRight fluent-icon"></i>
+      </span>
+      <span class="link">${item.dataset.label}</span>
+  </a>
+  `;
+});
+
+// REVIEW: For testing purposes
+let count = 0;
+
+window.addEventListener("scroll", (e) => {
+  count++;
+  if (count > 10) {
+    console.clear();
+    count = 0;
+  }
+  console.log(window.scrollY);
 });

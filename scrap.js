@@ -1,20 +1,22 @@
 /**
+ * STORY CARDS
+ * ----------------------------------------------
  * image: string;
  * authorImage: string;
  * quote: string;
  * products: { icon: string; label: string; }[]
  */
 
-const TRIGGER_ID = "story-card";
+let TRIGGER_ID = "story-card";
 
-const data = {
+let data = {
   image: "",
   authorImage: "",
   quote: "",
   products: [],
 };
 
-const card = document.querySelector("#carousel-occf87-0");
+let card = document.querySelector("#carousel-occf87-0");
 
 data.image = card.querySelector(".testimonial-card__media img").src;
 data.authorImage = card.querySelector(
@@ -33,3 +35,29 @@ data.products = Array.from(
     label: item.querySelector(".list-item__content a.ms-rte-link").innerHTML,
   };
 });
+
+/**
+ * TAKE THE NEXT STEP
+ * --------------------------------
+ * title: string;
+ * description: string;
+ * footerLabel: string;
+ */
+
+function getStepCards() {
+  const cards = Array.from(
+    document.querySelectorAll(
+      ".step-cards.three-up-cards .three-up-cards__card .card"
+    )
+  );
+
+  return cards.map((card) => ({
+    title: card.querySelector(".block-feature .block-feature__title h3 span")
+      .innerHTML,
+    description: card.querySelector(
+      ".block-feature .block-feature__paragraph div"
+    ).innerHTML,
+    footerLabel: card.querySelector(".block-slim .action a .link__text")
+      .innerHTML,
+  }));
+}

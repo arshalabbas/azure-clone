@@ -129,6 +129,13 @@ body {
   letter-spacing: -0.075rem;
 }
 
+.title-xl {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.05em;
+}
+
 .subtle {
   margin-bottom: 0.75rem;
   color: #17253d;
@@ -193,6 +200,7 @@ body {
   .link {
     padding-bottom: 0.125rem;
     color: #004275;
+    margin-top: 0 !important;
   }
 }
 
@@ -820,6 +828,10 @@ main {
     .link {
       margin-top: calc(2rem - 0.75rem);
     }
+
+    .action-footer {
+      margin-top: 2rem;
+    }
   }
 }
 /* Products and Services - END */
@@ -1271,3 +1283,25 @@ main {
   }
 }
 /* Stories - END */
+
+/* Steps - START */
+.steps-section {
+  padding: 3.5rem 0rem;
+  position: relative;
+
+  .container {
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.steps-cards {
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+.no-gap {
+  gap: 0 !important;
+}
+/* Steps - END */

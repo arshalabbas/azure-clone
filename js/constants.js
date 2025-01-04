@@ -26,7 +26,7 @@ const BADGE_CARDS = [
   {
     badge:
       "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/386597-product-and-services-logos-featured-card-4-azure-open-ai-service-28x28?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100&fmt=png-alpha&fit=constrain",
-    title: "Azure OpenAI Service<br> ",
+    title: "Azure OpenAI Service ",
     description: " Build your own agents and generative AI apps. ",
   },
   {
@@ -153,5 +153,43 @@ const STORIES = [
         label: "Azure OpenAI Service",
       },
     ],
+  },
+];
+
+const STEPS_CARDS = [
+  // {
+  //   title: "Protect, adapt, and innovate with Windows Server 2025 on Azure",
+  //   description:
+  //     " Get stronger security, increased hybrid capabilities, and new levels of performance, as well as confidential computing and hotpatching.",
+  //   footerLabel: "Read the blog",
+  // },
+  // {
+  //   title: "Create AI agents that keep humans at the center",
+  //   description:
+  //     " Empower your entire organization to create, customize, host, run, and manage AI solutions and services—including AI agents—with Azure AI Foundry.",
+  //   footerLabel: "Learn more",
+  // },
+  // {
+  //   title: "See new AI use cases in the Cloud Cultures series",
+  //   description:
+  //     " Explore stories of AI innovation with cloud technology that goes beyond coding—to help create connections between people, ecosystems, and economies.",
+  //   footerLabel: "Read the blog",
+  // },
+  {
+    title: "Choose the Azure account that’s right for you",
+    description: "Pay as you go or try Azure for free for up to 30 days.",
+    footerLabel: "Get started with Azure",
+  },
+  {
+    title: "Connect with a sales specialist",
+    description:
+      " Chat with or call a sales specialist for personalized guidance.",
+    footerLabel: "Get in Touch",
+  },
+  {
+    title: "New to Azure? Learn at your own pace",
+    description:
+      " Learn cloud computing basics with self-paced modules on Microsoft Learn.",
+    footerLabel: "Get Started",
   },
 ];
