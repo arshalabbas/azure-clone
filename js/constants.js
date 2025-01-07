@@ -193,3 +193,70 @@ const STEPS_CARDS = [
     footerLabel: "Get Started",
   },
 ];
+
+// Footer
+const FOOTER_LINKS = [
+  {
+    heading: "Explore Azure",
+    items: [
+      "What is Azure?",
+      "Get started with Azure",
+      "Global infrastructure",
+      "Datacenter regions",
+      "Trust your cloud",
+      "Azure Essentials",
+      "Customer stories",
+    ],
+  },
+  {
+    heading: "Products and pricing",
+    items: [
+      "Products",
+      "Azure pricing",
+      "Free Azure services",
+      "Flexible purchase options",
+      "FinOps on Azure",
+      "Optimize your costs",
+    ],
+  },
+  {
+    heading: "Solutions and support",
+    items: [
+      "Solutions",
+      "Resources for accelerating growth",
+      "Solution architectures",
+      "Support",
+      "Azure demo and live Q&amp;A",
+    ],
+  },
+  {
+    heading: "Partners",
+    items: ["Azure Marketplace", "Find a partner", "Join ISV Success"],
+  },
+  {
+    heading: "Resources",
+    items: [
+      "Training and certifications",
+      "Documentation",
+      "Blog",
+      "Developer resources",
+      "Students",
+      "Events and Webinars",
+      "Analyst reports, white papers, and e-books",
+      "Videos",
+    ],
+  },
+  {
+    heading: "Cloud computing",
+    items: [
+      "What is cloud computing?",
+      "What is multicloud?",
+      "What is machine learning?",
+      "What is deep learning?",
+      "What is AIaaS?",
+      "What are LLMs?",
+      "What are SLMs?",
+      "What is RAG?",
+    ],
+  },
+];

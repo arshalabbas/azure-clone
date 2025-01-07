@@ -61,3 +61,30 @@ function getStepCards() {
       .innerHTML,
   }));
 }
+
+/**
+ * FOOTER LINKS
+ * --------------------------------
+ * {
+ * heading: string;
+ * items: string[]
+ * }[]
+ */
+
+function getFooterData() {
+  const data = Array.from(
+    document.querySelectorAll("footer nav .c-uhff-nav-group")
+  ).map((el) => {
+    const heading = el.querySelector(".c-heading-4").innerHTML;
+    const items = Array.from(el.querySelectorAll("ul li a")).map(
+      (iel) => iel.innerHTML
+    );
+
+    return {
+      heading,
+      items,
+    };
+  });
+
+  return JSON.stringify(data);
+}
