@@ -121,7 +121,7 @@ STEPS_CARDS.forEach((item) => {
     </div>
 
     <div class="action-footer">
-      <div id="end-link" data-label="${item.footerLabel}"></div>
+      <div class="end-link" data-label="${item.footerLabel}"></div>
     </div>
   </div>
   `;
@@ -130,7 +130,7 @@ STEPS_CARDS.forEach((item) => {
 });
 
 // End Link
-const endLink = document.querySelectorAll("#end-link");
+const endLink = document.querySelectorAll(".end-link");
 endLink.forEach((item) => {
   item.innerHTML = `
   <a href="#" class="icon-link">
