@@ -76,7 +76,7 @@
 
     <!-- Sticky Header - START -->
     <div class="sticky-header">
-      <div class="inner-container container">
+      <div class="inner-container">
         <div class="header-label">
           <span>Featured news</span>
         </div>
@@ -213,7 +213,7 @@
             <button class="pill-btn active">Featured solutions</button>
             <button class="pill-btn">Cloud migration</button>
             <button class="pill-btn">Data transformation</button>
-            <button class="pill-btn">App Development</button>
+            <button class="pill-btn">App development</button>
             <button class="pill-btn">AI</button>
           </div>
 
@@ -328,17 +328,18 @@
                   Run business-critical workloads with hybrid cloud agility and
                   advanced security.
                 </p>
-                <button class="btn btn-primary btn-md">
-                  <span> Explore the product </span>
-                </button>
+                <div class="action-container">
+                  <button class="btn btn-primary btn-md">
+                    <span> Explore the product </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <!-- Mini cards from index.js on line 7 -->
         </div>
-        <div style="padding-right: 0.25rem; padding-left: 0.25rem">
-          <div class="spacer"></div>
-
+        <div class="spacer"></div>
+        <div class="col">
           <div class="end-link" data-label="See all products (200+)"></div>
         </div>
       </div>
@@ -391,7 +392,7 @@
         <h5 class="subtle">RESOURCES BY ROLE</h5>
         <h3 class="title">Transform the way you work</h3>
       </div>
-      <div class="inner-container">
+      <div class="container" style="position: relative">
         <!-- Background Image -->
         <div class="bg-img-container">
           <img src="./assets/images/resources-bg.avif" alt="Resources BG" />
@@ -618,7 +619,7 @@
         </ul>
       </div>
     </footer>
-    <div style="width: 100%; height: 62px"></div>
+    <div class="bottom-spacer"></div>
     <!-- Footer - END -->
   </body>
   <script src="./js/constants.js"></script>
