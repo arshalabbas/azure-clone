@@ -13,17 +13,18 @@
   </head>
   <body>
     <!-- Header - START -->
-    <header>
+    <!-- Header - Max md -->
+    <header class="max-md-only">
       <div class="header-top">
         <button class="nav-menu-btn">
           <i class="ms-Icon ms-Icon--GlobalNavButton"></i>
         </button>
+        <a href="#" class="ms-logo">
+          <img src="./assets/images/ms-logo.png" alt="Microsoft logo" />
+        </a>
         <button class="nav-search-btn">
           <i class="ms-Icon ms-Icon--Search"></i>
         </button>
-        <a href="#" class="ms-logo"
-          ><img src="./assets/images/ms-logo.png" alt="Microsoft logo"
-        /></a>
       </div>
       <!-- Categories -->
       <div class="category-selector">
@@ -31,6 +32,55 @@
           <button>Azure</button>
           <i class="ms-Icon ms-Icon--ChevronDown"></i>
         </div>
+      </div>
+    </header>
+
+    <!-- Header - Min Lg -->
+    <header class="lg-header min-lg-only">
+      <!-- Logo container -->
+      <a href="#" class="ms-logo">
+        <img src="./assets/images/ms-logo.png" alt="MS Logo" />
+      </a>
+      <!-- Nav Links and other actions -->
+      <div class="header-right">
+        <div class="azure-nav-item">
+          <a href="#" class="ms-logo">Azure</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Explore</a></li>
+            <li>
+              <a href="#">
+                Products
+                <i class="ms-Icon ms-Icon--ChevronDown chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Solutions
+                <i class="ms-Icon ms-Icon--ChevronDown chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Pricing
+                <i class="ms-Icon ms-Icon--ChevronDown chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Partners
+                <i class="ms-Icon ms-Icon--ChevronDown chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Resources
+                <i class="ms-Icon ms-Icon--ChevronDown chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- Header - END -->

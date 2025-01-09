@@ -1,7 +1,10 @@
 $bg-natural-fade: #f7f7f7;
 $fg-base-subtle: #17253d;
 $primary: #0078d4;
+
+// Breakpoints
 $md: 540px;
+$lg: 860px;
 
 :root {
   --bg-natural-fade: #f7f7f7;
@@ -231,6 +234,22 @@ body {
   }
 }
 
+.min-lg-only {
+  display: none;
+
+  @media (min-width: $lg) {
+    display: inherit;
+  }
+}
+
+.max-md-only {
+  display: none;
+
+  @media (max-width: $lg) {
+    display: inherit;
+  }
+}
+
 /* Heade - START */
 
 header {
@@ -283,10 +302,6 @@ button {
 }
 
 .ms-logo {
-  // padding: 12px 4px;
-  // margin-left: 12px;
-  // margin-top: 2px;
-  // try 1
   position: absolute;
   left: calc(50% - 60px);
   margin: 1px;
@@ -296,11 +311,112 @@ button {
   display: block;
   height: auto;
 
+  @media (min-width: $lg) {
+    position: static;
+    margin: 0;
+    margin-top: 1px;
+    padding: 16px 6px 16px 10px;
+    height: 100%;
+    width: 137px;
+    outline-offset: -2px;
+  }
+
   img {
     margin-top: -3px;
     width: 108px;
     max-width: none;
     height: auto;
+  }
+}
+
+// lg Header
+.lg-header {
+  width: 100%;
+  padding: 0 24px;
+  height: 54px;
+  font-size: 13px;
+  margin-bottom: 2px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  // align-items: center;
+
+  .header-right {
+    display: flex;
+    flex: 1;
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 0 1px 0 2px;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          letter-spacing: normal;
+
+          &:first-child a {
+            padding: 16px 8px 10px;
+            height: 48px;
+          }
+          &:nth-child(1) {
+            margin-right: 13.5px;
+          }
+          a {
+            position: relative;
+            color: #262626;
+            white-space: nowrap;
+            margin-right: -10px;
+            position: relative;
+            z-index: 701;
+            text-decoration: none;
+            border: 1px solid transparent;
+            margin-top: 1px;
+            outline-offset: -2px;
+            padding: 16px 30px 16px 12px;
+
+            .chevron-down {
+              position: absolute;
+              font-size: 8px;
+              color: currentColor;
+              font-weight: 700;
+              padding-top: 3px;
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.azure-nav-item {
+  position: relative;
+  height: 100%;
+  margin-top: auto;
+  a {
+    color: #262626;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -2px;
+    text-decoration: none;
+    letter-spacing: normal;
+
+    &::before {
+      border-left: 2px solid #000;
+      height: 24px;
+      content: " ";
+      margin-left: 7px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+    }
   }
 }
 
@@ -1290,6 +1406,10 @@ main {
         gap: 0.6rem;
         margin-top: 4px;
 
+        @media (min-width: $md) {
+          margin-top: 0;
+        }
+
         .label {
           font-weight: 600;
           font-size: 1rem;
@@ -1371,8 +1491,13 @@ main {
 
 /* Socials - START */
 .socials-section {
+  --padding-extra: 5.5px;
   padding-top: 1.5rem;
-  padding-bottom: calc(1.5rem + 5.5px);
+  padding-bottom: calc(1.5rem + var(--padding-extra));
+
+  @media (min-width: $md) {
+    --padding-extra: 0px;
+  }
 
   .inner-container {
     display: flex;
@@ -1403,6 +1528,10 @@ main {
   text-decoration: none;
   border-radius: 0.2rem;
   color: #000;
+
+  @media (min-width: $md) {
+    margin-bottom: 0;
+  }
 
   span {
     display: flex;
