@@ -311,6 +311,7 @@ button {
 }
 
 .lg-header {
+  display: none;
   width: 100%;
   padding: 0 24px;
   height: 54px;
@@ -318,7 +319,16 @@ button {
   margin-bottom: 2px;
   background: #fff;
   color: #000;
+}
+@media (min-width: 860px) {
+  .lg-header {
+    display: flex;
+  }
+}
+.lg-header .header-right-container {
+  flex: 1;
   display: flex;
+  justify-content: space-between;
 }
 .lg-header .header-right {
   display: flex;
@@ -332,37 +342,49 @@ button {
 .lg-header .header-right nav ul {
   display: flex;
   list-style: none;
+  gap: 4px;
+  margin-left: 7px;
 }
-.lg-header .header-right nav ul li {
-  letter-spacing: normal;
-}
-.lg-header .header-right nav ul li:first-child a {
-  padding: 16px 8px 10px;
-  height: 48px;
-}
-.lg-header .header-right nav ul li:nth-child(1) {
-  margin-right: 13.5px;
-}
-.lg-header .header-right nav ul li a {
+.lg-header .header-right nav a {
   position: relative;
   color: #262626;
   white-space: nowrap;
-  margin-right: -10px;
   position: relative;
-  z-index: 701;
   text-decoration: none;
   border: 1px solid transparent;
   margin-top: 1px;
   outline-offset: -2px;
-  padding: 16px 30px 16px 12px;
+  padding: 16px 0;
+  letter-spacing: normal;
 }
-.lg-header .header-right nav ul li a .chevron-down {
-  position: absolute;
+.lg-header .header-right nav a .chevron-down {
   font-size: 8px;
   color: currentColor;
   font-weight: 700;
-  padding-top: 3px;
-  right: 15px;
+  position: relative;
+  top: 1px;
+  margin-left: 4px;
+}
+.lg-header .header-right nav a:first-child {
+  padding: 16px 8px 10px;
+  height: 48px;
+}
+.lg-header .lg-search-btn {
+  margin-top: 3px;
+  height: 32px;
+  aspect-ratio: 1;
+  margin-right: 6px;
+  margin-left: 6px;
+  padding: 9px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  line-height: 18px;
+}
+.lg-header .lg-search-btn i {
+  font-size: 16px;
+  margin-left: 7px;
+  line-height: 18px;
+  margin-top: -0.5px;
 }
 
 .azure-nav-item {

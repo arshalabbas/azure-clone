@@ -331,6 +331,7 @@ button {
 
 // lg Header
 .lg-header {
+  display: none;
   width: 100%;
   padding: 0 24px;
   height: 54px;
@@ -338,8 +339,17 @@ button {
   margin-bottom: 2px;
   background: #fff;
   color: #000;
-  display: flex;
+
+  @media (min-width: $lg) {
+    display: flex;
+  }
   // align-items: center;
+
+  .header-right-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 
   .header-right {
     display: flex;
@@ -353,41 +363,56 @@ button {
       ul {
         display: flex;
         list-style: none;
+        gap: 4px;
+        margin-left: 7px;
+      }
 
-        li {
-          letter-spacing: normal;
+      a {
+        position: relative;
+        color: #262626;
+        white-space: nowrap;
+        // margin-right: -10px;
+        position: relative;
+        text-decoration: none;
+        border: 1px solid transparent;
+        margin-top: 1px;
+        outline-offset: -2px;
+        padding: 16px 0;
+        letter-spacing: normal;
 
-          &:first-child a {
-            padding: 16px 8px 10px;
-            height: 48px;
-          }
-          &:nth-child(1) {
-            margin-right: 13.5px;
-          }
-          a {
-            position: relative;
-            color: #262626;
-            white-space: nowrap;
-            margin-right: -10px;
-            position: relative;
-            z-index: 701;
-            text-decoration: none;
-            border: 1px solid transparent;
-            margin-top: 1px;
-            outline-offset: -2px;
-            padding: 16px 30px 16px 12px;
+        .chevron-down {
+          font-size: 8px;
+          color: currentColor;
+          font-weight: 700;
+          position: relative;
+          top: 1px;
+          margin-left: 4px;
+        }
 
-            .chevron-down {
-              position: absolute;
-              font-size: 8px;
-              color: currentColor;
-              font-weight: 700;
-              padding-top: 3px;
-              right: 15px;
-            }
-          }
+        &:first-child {
+          padding: 16px 8px 10px;
+          height: 48px;
         }
       }
+    }
+  }
+
+  .lg-search-btn {
+    margin-top: 3px;
+    height: 32px;
+    aspect-ratio: 1;
+    margin-right: 6px;
+    margin-left: 6px;
+    padding: 9px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 18px;
+
+    i {
+      font-size: 16px;
+      margin-left: 7px;
+      line-height: 18px;
+      margin-top: -0.5px;
     }
   }
 }
@@ -1317,6 +1342,7 @@ main {
   flex: 0 0 calc(calc(100% - calc(7.5rem * (1 - 1))) / 1);
   border-radius: 1rem;
   overflow: hidden;
+
   .story-card {
     overflow: hidden;
     position: relative;
