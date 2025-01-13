@@ -93,7 +93,18 @@
     <!-- Hero - START -->
     <main>
       <div class="hero-banner">
-        <img src="./assets/images/hero-banner.avif" alt="Hero Banner Image" />
+        <!-- <img src="./assets/images/hero-banner.avif" alt="Hero Banner Image" /> -->
+        <picture>
+          <source
+            srcset="./assets/images/hero-banner.avif"
+            media="(max-width: 540px)"
+          />
+          <source
+            srcset="./assets/images/hero-banner-lg.avif"
+            media="(min-width: 861px)"
+          />
+          <img src="./assets/images/hero-banner.avif" alt="Hero Banner Image" />
+        </picture>
       </div>
 
       <!-- Main Contents - START -->

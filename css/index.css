@@ -149,6 +149,11 @@ body {
   width: 100%;
   height: 2rem;
 }
+@media (min-width: 860px) {
+  .spacer {
+    height: 3rem;
+  }
+}
 
 .spacer-sm {
   width: 100%;
@@ -319,6 +324,8 @@ button {
   margin-bottom: 2px;
   background: #fff;
   color: #000;
+  position: relative;
+  z-index: 50;
 }
 @media (min-width: 860px) {
   .lg-header {
@@ -448,6 +455,13 @@ main {
   padding-bottom: 3.5rem;
   margin-bottom: 0.5rem;
   background-color: #f4fafd;
+  position: relative;
+}
+@media (min-width: 860px) {
+  main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .hero-banner {
@@ -456,13 +470,40 @@ main {
   height: 100%;
   max-height: 100%;
 }
+@media (min-width: 860px) {
+  .hero-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+.hero-banner picture,
 .hero-banner img {
+  display: flex;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
+@media (min-width: 860px) {
+  .hero-text-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: -0.5rem;
+  }
+}
 .hero-text-container .inner-container {
   margin-top: 2rem;
+}
+@media (min-width: 860px) {
+  .hero-text-container .inner-container {
+    margin-top: 0;
+  }
 }
 
 .hero-subtle {
@@ -474,6 +515,11 @@ main {
   line-height: 1rem;
   letter-spacing: 0.06rem;
 }
+@media (min-width: 860px) {
+  .hero-subtle {
+    margin-bottom: 1rem;
+  }
+}
 
 .hero-title {
   color: #0e1726;
@@ -481,6 +527,14 @@ main {
   font-weight: 600;
   line-height: 2.5rem;
   letter-spacing: -0.05em;
+}
+@media (min-width: 860px) {
+  .hero-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.05em;
+  }
 }
 
 .hero-description {
@@ -492,9 +546,21 @@ main {
   letter-spacing: -0.03em;
   padding-right: 1rem;
 }
+@media (min-width: 860px) {
+  .hero-description {
+    margin-top: 1.5rem;
+    padding-right: 3.5rem;
+  }
+}
 
 .hero-actions-container {
   margin-top: 1.5rem;
+}
+@media (min-width: 860px) {
+  .hero-actions-container {
+    margin-left: -0.5rem;
+    margin-top: 2rem;
+  }
 }
 .hero-actions-container .inner-container {
   display: flex;
@@ -523,6 +589,11 @@ main {
   .btn {
     width: -moz-fit-content !important;
     width: fit-content !important;
+  }
+}
+@media (min-width: 860px) {
+  .btn {
+    padding: 0.75rem 1rem;
   }
 }
 .btn span {

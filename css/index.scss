@@ -162,6 +162,10 @@ body {
 .spacer {
   width: 100%;
   height: 2rem;
+
+  @media (min-width: $lg) {
+    height: 3rem;
+  }
 }
 
 .spacer-sm {
@@ -339,6 +343,8 @@ button {
   margin-bottom: 2px;
   background: #fff;
   color: #000;
+  position: relative;
+  z-index: 50;
 
   @media (min-width: $lg) {
     display: flex;
@@ -480,6 +486,12 @@ main {
   padding-bottom: 3.5rem;
   margin-bottom: 0.5rem;
   background-color: #f4fafd;
+  position: relative;
+
+  @media (min-width: $lg) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .hero-banner {
@@ -488,15 +500,36 @@ main {
   height: 100%;
   max-height: 100%;
 
+  @media (min-width: $lg) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  picture,
   img {
+    display: flex;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
 .hero-text-container {
+  @media (min-width: $lg) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: -0.5rem;
+  }
   .inner-container {
     margin-top: 2rem;
+
+    @media (min-width: $lg) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -508,6 +541,10 @@ main {
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 0.06rem;
+
+  @media (min-width: $lg) {
+    margin-bottom: 1rem;
+  }
 }
 
 .hero-title {
@@ -516,6 +553,13 @@ main {
   font-weight: 600;
   line-height: 2.5rem;
   letter-spacing: -0.05em;
+
+  @media (min-width: $lg) {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.05em;
+  }
 }
 
 .hero-description {
@@ -526,10 +570,20 @@ main {
   line-height: 1.75rem;
   letter-spacing: -0.03em;
   padding-right: 1rem;
+
+  @media (min-width: $lg) {
+    margin-top: 1.5rem;
+    padding-right: 3.5rem;
+  }
 }
 
 .hero-actions-container {
   margin-top: 1.5rem;
+
+  @media (min-width: $lg) {
+    margin-left: -0.5rem;
+    margin-top: 2rem;
+  }
 
   .inner-container {
     display: flex;
@@ -556,6 +610,10 @@ main {
 
   @media (min-width: $md) {
     width: fit-content !important;
+  }
+
+  @media (min-width: $lg) {
+    padding: 0.75rem 1rem;
   }
 
   span {
