@@ -461,6 +461,7 @@ main {
   main {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    margin-bottom: 0;
   }
 }
 
@@ -622,6 +623,42 @@ main {
 }
 
 /* Hero - END */
+/* AI Chat Section - START*/
+.ai-chat {
+  background: linear-gradient(180deg, #002948 0%, #004275 98.96%);
+  box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+  width: 100%;
+  padding: 2rem 0;
+}
+.ai-chat .inner-container {
+  max-width: 100vw;
+  padding: 0 3.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ai-chat-text {
+  padding: 0.75rem 0.75rem 0.75rem 0;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.ai-chat-text .msg-icon {
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  font-size: 2.5rem;
+  display: flex;
+}
+.ai-chat-text .msg-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* AI Chat Section - END */
 /* Sticky Header - START */
 .sticky-header {
   position: sticky;
